@@ -1,0 +1,123 @@
+:root {
+    --primary: hsla(237, 97%, 13%, 1.65);
+    --secondary: hsla(270, 95%, 16%, 0.65);
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+        url("background-img.jpg") no-repeat center center / cover;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #dbd0d0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.row {
+    min-height: 100vh;
+    align-items: center;
+    padding: 100px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .static-txt {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+
+.dynamic-txt li {
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #dc3545;
+}
+
+
+.wrapper .dynamic-txt {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.wrapper .dynamic-txt li span {
+    position: relative;
+    padding: 2px;
+}
+
+.dynamic-txt li span::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #100741;
+    border-left: 2px solid #dc3545;
+    animation: typing 2.5s steps(9) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.web-developer {
+    position: relative;
+}
+
+.web-developer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 10%;
+    background: #fff;
+    top: 25px;
+
+}
+
+.paragraph p {
+    text-align: start;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.getintouch a {
+    color: #000;
+    border: 1px solid gray;
+    background: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.icons i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.icons a {
+    color: #fff !important;
+    text-decoration: none;
+}
